@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SKGoodsCell" customModule="StoreKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wvv-uN-TgM">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Wvv-uN-TgM" secondAttribute="height" multiplier="1:1" id="Y2j-BH-n99"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vka-ZZ-ndX">
+                        <rect key="frame" x="10" y="184" width="150" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bem-rt-k8N">
+                        <rect key="frame" x="10" y="206.5" width="35.5" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yN5-1v-erd">
+                        <rect key="frame" x="53.5" y="207.5" width="29" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yN5-1v-erd" firstAttribute="centerY" secondItem="bem-rt-k8N" secondAttribute="centerY" id="2iC-Iz-9yO"/>
+                <constraint firstItem="bem-rt-k8N" firstAttribute="top" secondItem="vka-ZZ-ndX" secondAttribute="bottom" constant="5.5" id="5Ka-5u-Q6o"/>
+                <constraint firstItem="Wvv-uN-TgM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6kz-0A-hBM"/>
+                <constraint firstItem="vka-ZZ-ndX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="FCU-gv-cQ3"/>
+                <constraint firstAttribute="trailing" secondItem="vka-ZZ-ndX" secondAttribute="trailing" constant="10" id="SbK-Zk-0a6"/>
+                <constraint firstItem="vka-ZZ-ndX" firstAttribute="top" secondItem="Wvv-uN-TgM" secondAttribute="bottom" constant="14" id="VWT-Rn-zHw"/>
+                <constraint firstItem="bem-rt-k8N" firstAttribute="leading" secondItem="vka-ZZ-ndX" secondAttribute="leading" id="Vth-Uo-ehA"/>
+                <constraint firstItem="yN5-1v-erd" firstAttribute="leading" secondItem="bem-rt-k8N" secondAttribute="trailing" constant="8" id="e8m-XV-0s4"/>
+                <constraint firstItem="Wvv-uN-TgM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m2f-1l-0FQ"/>
+                <constraint firstAttribute="trailing" secondItem="Wvv-uN-TgM" secondAttribute="trailing" id="nfF-U6-B4X"/>
+            </constraints>
+            <size key="customSize" width="170" height="250"/>
+            <connections>
+                <outlet property="mainImageView" destination="Wvv-uN-TgM" id="qyx-h8-eeY"/>
+                <outlet property="nameLabel" destination="vka-ZZ-ndX" id="7HP-zx-6cY"/>
+                <outlet property="originPriceLabel" destination="yN5-1v-erd" id="pOt-xJ-03R"/>
+                <outlet property="priceLabel" destination="bem-rt-k8N" id="DZF-in-WUb"/>
+            </connections>
+            <point key="canvasLocation" x="-148" y="175"/>
+        </collectionViewCell>
+    </objects>
+</document>

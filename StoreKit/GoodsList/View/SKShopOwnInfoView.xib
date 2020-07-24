@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SKShopOwnInfoView" customModule="StoreKit">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSG-lf-CEx">
+                    <rect key="frame" x="13" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="N1N-pr-fPI"/>
+                        <constraint firstAttribute="height" constant="40" id="W9e-bP-oOT"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美妆博主小于的店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcK-lH-vwV">
+                    <rect key="frame" x="61" y="25" width="106.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝 109万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5R-fE-zvC">
+                    <rect key="frame" x="61" y="46.5" width="52" height="12"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.86180971750000002" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="MDC-LR-fS6">
+                    <rect key="frame" x="12" y="82" width="296" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUP-M4-yQC" customClass="TwoLineButton" customModule="StoreKit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="49"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byo-jr-xga" customClass="TwoLineButton" customModule="StoreKit" customModuleProvider="target">
+                            <rect key="frame" x="83" y="0.0" width="47.5" height="49"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4H-GX-DV2" customClass="TwoLineButton" customModule="StoreKit" customModuleProvider="target">
+                            <rect key="frame" x="165.5" y="0.0" width="48" height="49"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6E-2r-DvQ" customClass="TwoLineButton" customModule="StoreKit" customModuleProvider="target">
+                            <rect key="frame" x="248.5" y="0.0" width="47.5" height="49"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="TGb-v0-fqJ"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝 109万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coe-tA-kko">
+                    <rect key="frame" x="126.5" y="150" width="52" height="12"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.86180971750000002" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美妆博主小于的店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeE-79-y6L">
+                    <rect key="frame" x="12" y="146" width="106.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Coe-tA-kko" firstAttribute="leading" secondItem="CeE-79-y6L" secondAttribute="trailing" constant="8" id="0Ii-4N-oin"/>
+                <constraint firstItem="CeE-79-y6L" firstAttribute="top" secondItem="MDC-LR-fS6" secondAttribute="bottom" constant="15" id="0sF-20-q9R"/>
+                <constraint firstItem="MDC-LR-fS6" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="12" id="7vh-s5-C6Y"/>
+                <constraint firstItem="RSG-lf-CEx" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="13" id="aCy-X0-vP8"/>
+                <constraint firstAttribute="trailing" secondItem="MDC-LR-fS6" secondAttribute="trailing" constant="12" id="ePg-so-Iw5"/>
+                <constraint firstItem="Coe-tA-kko" firstAttribute="bottom" secondItem="CeE-79-y6L" secondAttribute="bottom" id="fKF-8x-8uk"/>
+                <constraint firstItem="t5R-fE-zvC" firstAttribute="top" secondItem="kcK-lH-vwV" secondAttribute="bottom" constant="5.5" id="ghu-k1-49l"/>
+                <constraint firstItem="CeE-79-y6L" firstAttribute="leading" secondItem="MDC-LR-fS6" secondAttribute="leading" id="ilw-0X-OSG"/>
+                <constraint firstItem="kcK-lH-vwV" firstAttribute="top" secondItem="RSG-lf-CEx" secondAttribute="top" id="pNe-iA-WCx"/>
+                <constraint firstItem="t5R-fE-zvC" firstAttribute="leading" secondItem="kcK-lH-vwV" secondAttribute="leading" id="rDw-14-ISW"/>
+                <constraint firstItem="kcK-lH-vwV" firstAttribute="leading" secondItem="RSG-lf-CEx" secondAttribute="trailing" constant="8" id="rux-7q-dXR"/>
+                <constraint firstItem="MDC-LR-fS6" firstAttribute="top" secondItem="t5R-fE-zvC" secondAttribute="bottom" constant="23.5" id="zDL-wY-dOm"/>
+                <constraint firstItem="RSG-lf-CEx" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="25" id="zdb-H2-vf8"/>
+            </constraints>
+            <connections>
+                <outlet property="descLabel" destination="t5R-fE-zvC" id="HqX-jG-eKw"/>
+                <outlet property="headImageView" destination="RSG-lf-CEx" id="fvN-9p-Rht"/>
+                <outlet property="nameLabel" destination="kcK-lH-vwV" id="WQp-MM-6xy"/>
+                <outlet property="saleNumButton" destination="DUP-M4-yQC" id="w50-4l-zrX"/>
+                <outlet property="scoreOneButtom" destination="byo-jr-xga" id="PfA-lC-sLU"/>
+                <outlet property="scoreThreeButton" destination="f6E-2r-DvQ" id="6iS-T4-Kbe"/>
+                <outlet property="scoreTwoButton" destination="A4H-GX-DV2" id="655-Xe-NF8"/>
+            </connections>
+            <point key="canvasLocation" x="-894" y="-75"/>
+        </collectionReusableView>
+    </objects>
+</document>

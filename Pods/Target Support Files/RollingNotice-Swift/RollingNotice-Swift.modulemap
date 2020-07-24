@@ -1,0 +1,6 @@
+framework module RollingNotice_Swift {
+  umbrella header "RollingNotice-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
