@@ -2,7 +2,7 @@
 //  UIView+Line.swift
 //  StoreKit
 //
-//  Created by XXXXon 2020/7/21.
+//  Created by sckj on 2020/7/21.
 //  Copyright © 2020 sckj. All rights reserved.
 //
 
@@ -18,7 +18,17 @@ extension UIView {
     ///   - lineWidth: 线的宽，默认1pt
     ///   - isOnePixelWidth: 一像素线，默认false
     ///   - ignoreIfExist: 相同位置如果已经存在XLineView，忽略本次添加
-    func addLine(position:XLinePostion = .bottom,lineColor:UIColor = UIColor.qd_separator,startInsert:CGFloat = 0,endInsert:CGFloat = 0,lineWidth:CGFloat = 1,isOnePixelWidth:Bool = false,ignoreIfExist:Bool = true) {
+    func addLine(position:XLinePostion = .bottom,lineColor:UIColor = UIColor.white,startInsert:CGFloat = 0,endInsert:CGFloat = 0,lineWidth:CGFloat = 1,isOnePixelWidth:Bool = false,ignoreIfExist:Bool = true) {
+        
+        if self.autoresizesSubviews == false {
+            #if DEBUG
+            fatalError("autoresizesSubviews为false会导致添加的线显示异常")
+            #else
+            print("autoresizesSubviews为false会导致添加的线显示异常，求求你了，这个必须处理")
+            print("autoresizesSubviews为false会导致添加的线显示异常，求求你了，这个必须处理")
+            print("autoresizesSubviews为false会导致添加的线显示异常，求求你了，这个必须处理")
+            #endif
+        }
         
         let startTag = 5432
         if ignoreIfExist {
@@ -32,20 +42,25 @@ extension UIView {
         let v = XLineView.init(frame: rect)
         switch position {
         case .top:
-            rect = CGRect(x: 0, y: 0, width: self.width, height: lineWidth)
+            rect = CGRect(x: startInsert, y: 0, width: self.width - startInsert - endInsert, height: lineWidth)
+            v.autoresizingMask = [.flexibleWidth ,.flexibleRightMargin]
         case .bottom:
-            rect = CGRect(x: 0, y: self.height-lineWidth, width: self.width, height: lineWidth)
+            rect = CGRect(x: startInsert, y: self.height-lineWidth, width: self.width - startInsert - endInsert, height: lineWidth)
+            v.autoresizingMask = [.flexibleWidth , .flexibleTopMargin]
         case .left:
-            rect = CGRect(x: 0, y: 0, width: lineWidth, height: self.height)
+            rect = CGRect(x: 0, y: startInsert, width: lineWidth, height: self.height-startInsert - endInsert)
+            v.autoresizingMask = [.flexibleHeight]
         case .right:
-            rect = CGRect(x: self.width-lineWidth, y: 0, width: lineWidth, height: self.height)
+            rect = CGRect(x: self.width-lineWidth, y: startInsert, width: lineWidth, height: self.height - startInsert - endInsert)
+            v.autoresizingMask = [.flexibleHeight]
         case .leftTopToRightBottom:
             rect = self.bounds
+            v.autoresizingMask = [.flexibleHeight , .flexibleWidth]
         case .leftBottomToRightTop:
             rect = self.bounds
+            v.autoresizingMask = [.flexibleHeight ,.flexibleWidth]
         }
-        v.startInsert = startInsert
-        v.endInsert = endInsert
+        v.linePostion = position
         v.lineWidth = lineWidth
         v.isOnePixelWidth = isOnePixelWidth
         v.tag = startTag + position.rawValue

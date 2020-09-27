@@ -146,6 +146,7 @@
 		FEF64C9024CACD6500DD0D30 /* XBaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64C8F24CACD6400DD0D30 /* XBaseTableCell.swift */; };
 		FEF64C9224CAD43E00DD0D30 /* XBaseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64C9124CAD43E00DD0D30 /* XBaseTableVC.swift */; };
 		FEF64CA224CAF69000DD0D30 /* XTopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CA124CAF68F00DD0D30 /* XTopTabBar.swift */; };
+		FEF6509E24CBD1B600DD0D30 /* MyOrderPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6509D24CBD1B600DD0D30 /* MyOrderPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -303,6 +304,7 @@
 		FEF64C8F24CACD6400DD0D30 /* XBaseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBaseTableCell.swift; sourceTree = "<group>"; };
 		FEF64C9124CAD43E00DD0D30 /* XBaseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBaseTableVC.swift; sourceTree = "<group>"; };
 		FEF64CA124CAF68F00DD0D30 /* XTopTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTopTabBar.swift; sourceTree = "<group>"; };
+		FEF6509D24CBD1B600DD0D30 /* MyOrderPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +362,7 @@
 		FE6FE87824C68A590098C0F6 /* StoreKit */ = {
 			isa = PBXGroup;
 			children = (
+				FEF6509C24CBD16A00DD0D30 /* 订单 */,
 				FEF64C6124CA8DFF00DD0D30 /* 店铺 */,
 				FE6FE88E24C68D0B0098C0F6 /* XFoundation */,
 				FEF64BD424CA84A900DD0D30 /* 商品详情 */,
@@ -717,6 +720,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FEF6509C24CBD16A00DD0D30 /* 订单 */ = {
+			isa = PBXGroup;
+			children = (
+				FEF6509D24CBD1B600DD0D30 /* MyOrderPageVC.swift */,
+			);
+			path = "订单";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -894,6 +905,7 @@
 				FEE36A2724C71DDC00C892B0 /* TwoLineButton.swift in Sources */,
 				FEE369DA24C6A40900C892B0 /* ActivityIndicator.swift in Sources */,
 				FEE369AC24C6A0FB00C892B0 /* YXGoodsCell.swift in Sources */,
+				FEF6509E24CBD1B600DD0D30 /* MyOrderPageVC.swift in Sources */,
 				FEE36A0F24C6E89200C892B0 /* QMUIConfigurationTemplateDark.m in Sources */,
 				FEE36A0824C6DC3400C892B0 /* XBaseIGListVC.swift in Sources */,
 				FEE369A024C6A0DD00C892B0 /* YXBannerModel.swift in Sources */,
